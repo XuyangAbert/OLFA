@@ -19,9 +19,10 @@ label_ratio = 10
 labeling_budget = 0
 # Read Data from the csv. files
 def Input():
-    data_dir = pjoin(dirname(sio.__file__),
-                     'C:/Users/Xuyang/Desktop/Spring-2021-PhD-Xuyang/Research/Fault-Detection-Self-Driving-Cars/Datasets/CARAL-Simulator/Town-03/SS/')
-    csv_fname = pjoin(data_dir, 'CarlaTown03-30Vehicles-ML-fault-SS-2.csv')
+    # data_dir = pjoin(dirname(sio.__file__),
+    #                 'C:/Users/Xuyang/Desktop/Spring-2021-PhD-Xuyang/Research/Fault-Detection-Self-Driving-Cars/Datasets/CARAL-Simulator/Town-03/SS/')
+    # csv_fname = pjoin(data_dir, 'CarlaTown03-30Vehicles-ML-fault-SS-2.csv')
+    csv_fname = 'CarlaTown03-30Vehicles-ML-fault-SS-2.csv'
     # sample = pd.read_csv(csv_fname,header=None)
     sample = pd.read_csv(csv_fname)
     attributes = sample.columns.values
