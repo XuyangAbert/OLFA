@@ -14,3 +14,5 @@ Several python packages need to be installed before running the Draft_Code.py fi
 The code is just a preliminary implementation of OLFA framework and more optimized code will be updated soon.
 
 Along with the python code, we generated six benchmark datasets with different sensor faults using the CARLA simulator. Several examples of the faulty data can be seen below. 
+
+![alt text](https://github.com/XuyangAbert/OLFA/blob/main/Plots/AccX-SS.png)
