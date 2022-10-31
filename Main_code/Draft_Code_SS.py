@@ -19,11 +19,11 @@ label_ratio = 10
 labeling_budget = 0
 # Read Data from the csv. files
 def Input():
-    data_dir = pjoin(dirname(sio.__file__),
-                     'C:/Users/Xuyang/Desktop/Spring-2021-PhD-Xuyang/Research/Fault-Detection-Self-Driving-Cars/Datasets/CARAL-Simulator/Town-03/SS/')
-    csv_fname = pjoin(data_dir, 'CarlaTown03-30Vehicles-ML-fault-SS-2.csv')
+#     data_dir = pjoin(dirname(sio.__file__),
+#                      'C:/Users/Xuyang/Desktop/Spring-2021-PhD-Xuyang/Research/Fault-Detection-Self-Driving-Cars/Datasets/CARAL-Simulator/Town-03/SS/')
+#     csv_fname = pjoin(data_dir, 'CarlaTown03-30Vehicles-ML-fault-SS-2.csv')
     # sample = pd.read_csv(csv_fname,header=None)
-    sample = pd.read_csv(csv_fname)
+    sample = pd.read_csv('CarlaTown03-30Vehicles-ML-fault-SS-2.csv')
     attributes = sample.columns.values
     [N,L] = np.shape(sample)
     # Extract the label of the data from the data frame
@@ -1309,8 +1309,6 @@ if __name__ == '__main__':
         normal_indices = np.where(ClusterIndice < np.shape(normal_clusters)[0])[0]
         fault_indices = np.where(ClusterIndice >= np.shape(normal_clusters)[0])[0]
         num_no = np.shape(novelfal)[0]+np.shape(novelnor)[0]
-#        if t == 4:
-#            print('Error Check!!!')
         # -------------------Sub-cluster  structure exploration----------------- #
         if t == 0:
             # Explore sub-clusters inside normal clusters
@@ -1509,8 +1507,6 @@ if __name__ == '__main__':
             else:
                 AccHist.append(accuracy_score(temp_oracle[fault_idx], predlabel[fault_idx]) * 100)
                 F1Hist.append(f1_score(temp_oracle[fault_idx], predlabel[fault_idx], average='macro') * 100)
-                P1Hist.append(precision_score(temp_oracle[fault_idx], predlabel[fault_idx], average='weighted') * 100)
-                R1Hist.append(recall_score(temp_oracle[fault_idx], predlabel[fault_idx], average='weighted') * 100)
             print("Faults are correctly detected!!!")
         elif predict_fault and not true_fault:
             falsecount += 1
@@ -1519,10 +1515,6 @@ if __name__ == '__main__':
             misscount += 1
             print('Fail to detect fault!!!')
         else:
-#            AccHist.append(0 * 100)
-#            F1Hist.append(0 * 100)
-#            P1Hist.append(0 * 100)
-#            R1Hist.append(0 * 100)
             print('Everything works fine!!!')
         PF = np.concatenate([normal_fitness, fault_fitness])
         PreStd, PFS = StoreInf(PF, PFS, PreStd, stdData)
@@ -1572,7 +1564,7 @@ if __name__ == '__main__':
     count1, count2 = 1, 1
     for l1 in label_set2:
         idx1 = np.where(AccLabel==l1)[0]
-        if count1 == 5: # 10
+        if count1 == 10: # 10
             count1=0
         AccLabel[idx1] = count1
         count1 += 1
@@ -1589,7 +1581,7 @@ if __name__ == '__main__':
     plt.xlabel('Sample id')
     plt.ylabel('Class label')
     plt.legend()
-    plt.yticks([0, 1, 2, 3, 4, 5])
+    plt.yticks([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     plt.savefig('results_town03_SS.png')
     plt.show()
     all_faultidx = np.where(AccLabel!=0)[0]
@@ -1599,7 +1591,7 @@ if __name__ == '__main__':
     plt.xlabel('Sample id')
     plt.ylabel('Class label')
     plt.legend()
-    plt.yticks([0, 1, 2, 3, 4, 5])
+    plt.yticks([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     plt.savefig('results_town03_SS_miss.png')
     plt.show()
     plt.figure(3)
@@ -1625,7 +1617,6 @@ if __name__ == '__main__':
             labels += label
     plt.legend(lines, labels, loc = 'upper right',bbox_to_anchor=(1.8, 3.5))
     plt.setp(axes,yticks=[0, 1, 2],yticklabels = sensors)
-#    plt.suptitle('Sensor faulty probabilities with respect a specific fault type')
 #    plt.savefig('sensor_town03_SS.png')
     plt.show()
 
