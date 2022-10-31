@@ -7,4 +7,10 @@ The Draft_Code.py file implements the proposed OLFA technique into python and us
 Several python packages need to be installed before running the Draft_Code.py file.
 1. Numpy
 2. Sklearn
-3. 
+3. Pandas
+4. Matplotlib
+5. Scipy
+
+The code is just a preliminary implementation of OLFA framework and more optimized code will be updated soon.
+
+Along with the python code, we generated six benchmark datasets with different sensor faults using the CARLA simulator. 
