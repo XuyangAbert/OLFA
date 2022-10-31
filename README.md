@@ -21,3 +21,4 @@ Along with the python code, we generated six benchmark datasets with different s
 ![alt text](https://github.com/XuyangAbert/OLFA/blob/main/Plots/AccY-SS.png)
 
 The output from the OLFA module are:
+![alt text](https://github.com/XuyangAbert/OLFA/blob/main/Output.png)
