@@ -30,6 +30,6 @@ Along with the python code, we generated six benchmark datasets with different s
 
 ![alt text](https://github.com/XuyangAbert/OLFA/blob/main/Plots/AccY-SS.png)
 
-## The output from the OLFA module are:
+## The workflow of the OLFA module can be visualized below:
 
 ![alt text](https://github.com/XuyangAbert/OLFA/blob/main/Output.png)
