@@ -33,3 +33,8 @@ Along with the python code, we generated six benchmark datasets with different s
 ## The workflow of the OLFA module can be visualized below:
 
 ![alt text](https://github.com/XuyangAbert/OLFA/blob/main/Output.png)
+
+## Note:
+This work is submitted to the IEEE Transactions on Intelligent Transportation Systems and is currently under review. Modification will be constantly updated to address possible issues raised in the future.
+
+
