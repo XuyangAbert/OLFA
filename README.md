@@ -35,6 +35,10 @@ Along with the python code, we generated six benchmark datasets with different s
 ![alt text](https://github.com/XuyangAbert/OLFA/blob/main/Output.png)
 
 ## Note:
-This work is submitted to the IEEE Transactions on Intelligent Transportation Systems and is currently under review. Modification will be constantly updated to address possible issues raised in the future.
+This work has been accepted by the IEEE Transactions on Intelligent Transportation Systems and the citation format is provided below:
+
+Yan, X., Sarkar, M., Lartey, B., Gebru, B., Homaifar, A., Karimoddini, A., & Tunstel, E. (2023). An Online Learning Framework for Sensor Fault Diagnosis Analysis in Autonomous Cars. IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2023.3305620. (Accepted)
+
+Modification will be constantly updated to address possible issues raised in the future.
 
 
