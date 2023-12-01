@@ -1,4 +1,6 @@
-# OLFA: An Online Learning Framework for sensor fault analysis in the autonomous cars
+## Getting Start
+
+### OLFA: An Online Learning Framework for sensor fault analysis in the autonomous cars
 
 This project aims to implement a clustering-based fault classification framework for sensor fault analysis in the autonomous cars. The proposed technique is submitted to the IEEE Transactions on Intelligent Transportation Systems and under review. (Modifications will be added later to address any possible issues of the proposed technique.)
 
@@ -7,7 +9,8 @@ In "Main_code" folder, the Draft_Code_SS.py/Draft_Code_MS.py file implements the
 In "Plots" folder, a visualization of the injected single-sensor faults with three fault models is displayed.
 
 
-## Several python packages need to be installed before running the Draft_Code.py file.
+## Dependencies
+Several python packages need to be installed before running the Draft_Code.py file.
 1. Numpy
 2. Sklearn
 3. Pandas
@@ -34,10 +37,10 @@ Along with the python code, we generated six benchmark datasets with different s
 
 ![alt text](https://github.com/XuyangAbert/OLFA/blob/main/Output.png)
 
-## Note:
+## Citation Format
 This work has been accepted by the IEEE Transactions on Intelligent Transportation Systems and the citation format is provided below:
 
-Yan, X., Sarkar, M., Lartey, B., Gebru, B., Homaifar, A., Karimoddini, A., & Tunstel, E. (2023). An Online Learning Framework for Sensor Fault Diagnosis Analysis in Autonomous Cars. IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2023.3305620. (Accepted)
+* Yan, X., Sarkar, M., Lartey, B., Gebru, B., Homaifar, A., Karimoddini, A., & Tunstel, E. (2023). An Online Learning Framework for Sensor Fault Diagnosis Analysis in Autonomous Cars. IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2023.3305620. (Accepted)
 
 Modification will be constantly updated to address possible issues raised in the future.
 
